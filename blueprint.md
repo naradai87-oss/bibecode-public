@@ -13,10 +13,10 @@
 *   Added a simple Gemini web component (`<simple-greeting>`).
 *   Pushed initial code to GitHub.
 *   Added a dark mode/white mode toggle.
+*   Added a partnership inquiry form using Formspree.
 
 ## Current Plan
 
-1.  **Add Partnership Form:** Create a new card in `index.html` with a form for partnership inquiries that submits to the provided Formspree URL.
-2.  **Update CSS:** Add styles for the new form elements to ensure they are consistent with the application's theme, including dark mode.
-3.  **Push to GitHub:** Commit the changes to the remote repository.
-4.  **Deploy:** Deploy the updated application to Firebase Hosting.
+1.  **Add Disqus Comments:** Integrate the Disqus comment section into `index.html` at the bottom of the page.
+2.  **Push to GitHub:** Commit the changes to the remote repository.
+3.  **Deploy:** Deploy the updated application to Firebase Hosting.
