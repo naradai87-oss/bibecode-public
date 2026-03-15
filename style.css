@@ -1,65 +1,95 @@
+:root {
+  --background-color: #f2f2f2;
+  --text-color: #333;
+  --header-background: #1a1a1a;
+  --header-text: white;
+  --nav-background: #333;
+  --nav-text: white;
+  --card-background: white;
+  --button-background: #ffcc00;
+  --button-text: #333;
+  --footer-background: #111;
+  --footer-text: white;
+}
+
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #f2f2f2;
+  --header-background: #1a1a1a;
+  --header-text: white;
+  --nav-background: #333;
+  --nav-text: white;
+  --card-background: #1e1e1e;
+  --button-background: #ffcc00;
+  --button-text: #333;
+  --footer-background: #1e1e1e;
+  --footer-text: #f2f2f2;
+}
+
 body{
-font-family:Arial;
-margin:0;
-background:#f2f2f2;
-text-align:center;
+  font-family:Arial;
+  margin:0;
+  background: var(--background-color);
+  color: var(--text-color);
+  text-align:center;
 }
 
 header{
-background:#1a1a1a;
-color:white;
-padding:20px;
-font-size:24px;
+  background: var(--header-background);
+  color: var(--header-text);
+  padding:20px;
+  font-size:24px;
 }
 
 nav{
-background:#333;
-padding:10px;
+  background: var(--nav-background);
+  padding:10px;
 }
 
-nav a{
-color:white;
-margin:10px;
-text-decoration:none;
+av a{
+  color: var(--nav-text);
+  margin:10px;
+  text-decoration:none;
 }
 
 .container{
-padding:40px;
+  padding:40px;
 }
 
 button{
-padding:15px 25px;
-font-size:18px;
-background:#ffcc00;
-border:none;
-border-radius:8px;
-cursor:pointer;
+  padding:15px 25px;
+  font-size:18px;
+  background: var(--button-background);
+  color: var(--button-text);
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
 }
 
 .results{
-margin-top:30px;
-font-size:22px;
-line-height:2;
+  margin-top:30px;
+  font-size:22px;
+  line-height:2;
 }
 
 .card{
-background:white;
-padding:20px;
-margin:20px auto;
-width:300px;
-border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
+  background: var(--card-background);
+  padding:20px;
+  margin:20px auto;
+  width:300px;
+  border-radius:10px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
 
 .ad{
-margin:40px;
-padding:30px;
-background:#ddd;
+  margin:40px;
+  padding:30px;
+  background:#ddd;
 }
 
 footer{
-background:#111;
-color:white;
-padding:20px;
-margin-top:60px;
+  background: var(--footer-background);
+  color: var(--footer-text);
+  padding:20px;
+  margin-top:60px;
 }

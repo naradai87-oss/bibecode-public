@@ -8,9 +8,14 @@
 *   **style.css:** Application styling.
 *   **main.js:** Application logic and component definitions.
 
+## Implemented Features
+*   Separated CSS from HTML.
+*   Added a simple Gemini web component (`<simple-greeting>`).
+*   Pushed initial code to GitHub.
+
 ## Current Plan
 
-1.  **Integrate Gemini Component:** Add the Gemini web component to the application.
-2.  **Update `index.html`:** Add the Gemini component and link to `main.js`.
-3.  **Update `main.js`:** Define and register the Gemini web component.
-4.  **Update `style.css`:** Adjust styling for the new component.
+1.  **Add Theme Toggle:** Implement a button in `index.html` to switch between light and dark modes.
+2.  **Update CSS:** Refactor `style.css` to use CSS variables for colors and define a dark mode color palette.
+3.  **Update JavaScript:** Add logic to `main.js` to handle the theme switching by toggling a class on the body.
+4.  **Deploy:** Deploy the updated application to Firebase Hosting.
