@@ -12,10 +12,11 @@
 *   Separated CSS from HTML.
 *   Added a simple Gemini web component (`<simple-greeting>`).
 *   Pushed initial code to GitHub.
+*   Added a dark mode/white mode toggle.
 
 ## Current Plan
 
-1.  **Add Theme Toggle:** Implement a button in `index.html` to switch between light and dark modes.
-2.  **Update CSS:** Refactor `style.css` to use CSS variables for colors and define a dark mode color palette.
-3.  **Update JavaScript:** Add logic to `main.js` to handle the theme switching by toggling a class on the body.
+1.  **Add Partnership Form:** Create a new card in `index.html` with a form for partnership inquiries that submits to the provided Formspree URL.
+2.  **Update CSS:** Add styles for the new form elements to ensure they are consistent with the application's theme, including dark mode.
+3.  **Push to GitHub:** Commit the changes to the remote repository.
 4.  **Deploy:** Deploy the updated application to Firebase Hosting.
