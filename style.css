@@ -38,6 +38,7 @@ body{
   background: var(--background-color);
   color: var(--text-color);
   text-align:center;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header{
@@ -45,6 +46,7 @@ header{
   color: var(--header-text);
   padding:20px;
   font-size:24px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 nav{
@@ -56,10 +58,18 @@ av a{
   color: var(--nav-text);
   margin:10px;
   text-decoration:none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
 }
 
 .container{
   padding:40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button{
@@ -71,12 +81,19 @@ button{
   border-radius:8px;
   cursor:pointer;
   margin-top: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .results{
   margin-top:30px;
   font-size:22px;
   line-height:2;
+  animation: fadeIn 1s;
 }
 
 .card{
@@ -85,13 +102,22 @@ button{
   margin:20px auto;
   width:300px;
   border-radius:10px;
-  box-shadow:0 5px 10px rgba(0,0,0,0.1);
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .ad{
   margin:40px;
   padding:30px;
   background:#ddd;
+  width: 100%;
+  max-width: 728px;
+  box-sizing: border-box;
 }
 
 footer{
@@ -116,4 +142,9 @@ form input, form textarea {
   background-color: var(--input-background);
   color: var(--input-text);
   box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
